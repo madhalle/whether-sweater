@@ -4,6 +4,6 @@ class Api::V1::ForecastController<ApplicationController
     latitude = location_results.latitude
     longitude = location_results.longitude
     forecast = Forecast.new(latitude, longitude)
-    ForecastSerializer(forecast)
+    render json: ForecastSerializer.new(forecast)
   end
 end

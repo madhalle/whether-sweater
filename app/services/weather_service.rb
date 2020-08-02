@@ -1,12 +1,18 @@
 class WeatherService
 
   def get_weather_report(latitude, longitude)
-    # code
+    results = conn.get("/data/2.5/onecall") do |req|
+      req.params[:lat]= latitude
+      req.params[:lon]= longitude
+      req.params[:exclude]= "minutely"
+      req.params[:appid]= ENV["WEATHER_MAP_API"]
+    end
+    JSON.parse(results.body, symbolize_names: true)
   end
 
   private
 
   def conn
-    results = Faraday.new()
+    Faraday.new("https://api.openweathermap.org")
   end
 end

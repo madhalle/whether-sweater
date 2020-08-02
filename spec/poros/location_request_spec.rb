@@ -1,15 +1,17 @@
 require 'rails_helper'
 
-describe "Weather api request" do
-  it "can retrieve info from weather site" do
+feature "Weather API" do
+  it "sends weather data for a location" do
+    location = Location.new("denver, CO")
 
-    get "/api/v1/forecast?location=denver,co"
-    response = JSON.parse(response.body)
-    epxect(response).to be_successful
+    expect(location.latitude).to eq(39.738453)
+    expect(location.longitude).to eq(-104.984853)
   end
+
 end
 
 #
+# GET /api/v1/forecast?location=denver,co
 # Content-Type: application/json
 # Accept: application/json
 #

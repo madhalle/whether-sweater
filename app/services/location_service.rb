@@ -9,7 +9,7 @@ class LocationService
       req.params[:location] = @location
     end
     v = JSON.parse(response.body, symbolize_names: true)
-    require "pry"; binding.pry
+
   end
   private
 

@@ -1,5 +1,3 @@
-class User
-  def create
-    User.create!(email: params[:email])
-  end
+class User < ApplicationRecord
+  validates_presence_of :email
 end

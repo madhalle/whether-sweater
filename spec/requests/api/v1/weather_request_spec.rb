@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Weather api request" do
-  it "can retrieve info from weather site" do
+  it "can retrieve info from weather site" , :vcr do
 
     # request = JSON.parse(response.body)
     get "/api/v1/forecast?location=denver,co"

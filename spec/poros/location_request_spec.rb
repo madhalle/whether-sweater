@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature "Weather API" do
-  it "sends weather data for a location" do
+  it "sends weather data for a location" , :vcr do
     location = Location.new("denver, CO")
 
     expect(location.latitude).to eq(39.738453)

@@ -5,7 +5,7 @@ class LocationService
 
   def get_location
     response = conn.get("/geocoding/v1/address") do |req|
-      req.params[:key] = ENV["MAPQUEST_API_KEY"]
+      req.params[:key] = ENV['MAPQUEST_API_KEY']
       req.params[:location] = @location
     end
     v = JSON.parse(response.body, symbolize_names: true)

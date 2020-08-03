@@ -7,7 +7,7 @@ class Location
   end
 
   def get_trails
-    trails_restults = TrailsService.new.get_trails(@latitude, @longitude)
+    TrailsService.new.get_trails(@latitude, @longitude)
   end
 
   # def latitude

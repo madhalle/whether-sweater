@@ -5,6 +5,7 @@ class NewTrailService
     trail_results[:trails].each do |trail|
       trail_address = "#{trail[:latitude]},#{trail[:longitude]}"
       distance = DistanceToService.new.find_distance(location_results, trail_address)
+
       trails<< ForTrailsTrail.new(name: trail[:name],
                     summary: trail[:summary],
                     difficulty: trail[:difficulty],

@@ -4,10 +4,10 @@ class DistanceToService
       req.params[:key] = ENV['MAPQUEST_API_KEY']
       req.params[:from] = current_location
       req.params[:to] = trail_address
-      
+
     end
-    v = JSON.parse(response.body, symbolize_names: true)
-    require "pry"; binding.pry
+    result = JSON.parse(response.body, symbolize_names: true)
+    return result[:route][:distance]
   end
 
   private

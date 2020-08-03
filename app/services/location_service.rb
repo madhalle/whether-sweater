@@ -10,6 +10,7 @@ class LocationService
     end
     JSON.parse(response.body, symbolize_names: true)
   end
+
   private
 
   def conn

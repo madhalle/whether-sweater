@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 03 Aug 2020 16:01:29 GMT
+      - Mon, 03 Aug 2020 16:02:03 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1734'
+      - '1735'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,7 +35,7 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 03 Aug 2020 16:01:29 GMT
+      - Mon, 03 Aug 2020 16:02:03 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
@@ -43,7 +43,7 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=67B89F3ECE76CA21E6507B75BA4A8235; Path=/; HttpOnly
+      - JSESSIONID=E656C8F9E8E42354B018D6CE94510D5C; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -53,304 +53,9 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2020 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2020 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_API_KEY>&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=2119677595"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_API_KEY>&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=1881135019"}]}]}'
-  recorded_at: Mon, 03 Aug 2020 16:01:29 GMT
-- request:
-    method: get
-    uri: https://www.hikingproject.com/data/get-trails?key=<HIKING_PROJ_API>&lat=39.738453&lon=-104.984853&sort=distance
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.0.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Mon, 03 Aug 2020 16:01:29 GMT
-      Server:
-      - Apache
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max-age=0, must-revalidate, no-cache, no-store, private
-      Pragma:
-      - no-cache
-      X-Ap-Request-Id:
-      - dc9f25f0-d68f-4bf4-853e-d79e572b8845
-      Vary:
-      - Accept-Encoding
-      Content-Length:
-      - '2115'
-      Content-Type:
-      - application/json
-    body:
-      encoding: ASCII-8BIT
-      string: |-
-        {
-            "trails": [
-                {
-                    "id": 7011837,
-                    "name": "City Park Loop",
-                    "type": "Recommended Route",
-                    "summary": "An easy escape from the hustle and bustle of Denver's city limits.",
-                    "difficulty": "green",
-                    "stars": 3.8,
-                    "starVotes": 6,
-                    "location": "Denver, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7011837\/city-park-loop",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011510_sqsmall_1554559518.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011510_small_1554559518.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011510_smallMed_1554559518.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011510_medium_1554559518.jpg",
-                    "length": 3.3,
-                    "ascent": 56,
-                    "descent": -55,
-                    "high": 5301,
-                    "low": 5255,
-                    "longitude": -104.9567,
-                    "latitude": 39.7495,
-                    "conditionStatus": "All Clear",
-                    "conditionDetails": "Dry",
-                    "conditionDate": "2020-05-17 22:25:26"
-                },
-                {
-                    "id": 7018092,
-                    "name": "Denver Zoo",
-                    "type": "Recommended Route",
-                    "summary": "A stroll through the Denver Zoo. Admission fees charged to access this trail",
-                    "difficulty": "green",
-                    "stars": 4.5,
-                    "starVotes": 2,
-                    "location": "Denver, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7018092\/denver-zoo",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7017883_sqsmall_1554829956.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7017883_small_1554829956.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7017883_smallMed_1554829956.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7017883_medium_1554829956.jpg",
-                    "length": 2.6,
-                    "ascent": 41,
-                    "descent": -42,
-                    "high": 5289,
-                    "low": 5254,
-                    "longitude": -104.9489,
-                    "latitude": 39.7503,
-                    "conditionStatus": "Unknown",
-                    "conditionDetails": null,
-                    "conditionDate": "1970-01-01 00:00:00"
-                },
-                {
-                    "id": 7009519,
-                    "name": "Sand Creek Tour",
-                    "type": "Recommended Route",
-                    "summary": "Urban Canal\/Greenbelt trail at it's finest!",
-                    "difficulty": "green",
-                    "stars": 4,
-                    "starVotes": 3,
-                    "location": "Aurora, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7009519\/sand-creek-tour",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029382_sqsmall_1554924405.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029382_small_1554924405.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029382_smallMed_1554924405.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029382_medium_1554924405.jpg",
-                    "length": 9.1,
-                    "ascent": 269,
-                    "descent": -269,
-                    "high": 5386,
-                    "low": 5285,
-                    "longitude": -104.8423,
-                    "latitude": 39.7554,
-                    "conditionStatus": "Unknown",
-                    "conditionDetails": null,
-                    "conditionDate": "1970-01-01 00:00:00"
-                },
-                {
-                    "id": 7005455,
-                    "name": "Golden Summit Trail",
-                    "type": "Recommended Route",
-                    "summary": "This is the classic trail to ascend the backside of Golden's signature rock formation, Castle Rock.",
-                    "difficulty": "blue",
-                    "stars": 4,
-                    "starVotes": 27,
-                    "location": "Golden, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7005455\/golden-summit-trail",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004483_sqsmall_1554245122.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004483_small_1554245122.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004483_smallMed_1554245122.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004483_medium_1554245122.jpg",
-                    "length": 1.8,
-                    "ascent": 449,
-                    "descent": -447,
-                    "high": 6281,
-                    "low": 5833,
-                    "longitude": -105.2104,
-                    "latitude": 39.7524,
-                    "conditionStatus": "All Clear",
-                    "conditionDetails": "Dry - Private property stakes kept us off the peak.",
-                    "conditionDate": "2020-06-14 13:55:44"
-                },
-                {
-                    "id": 7091962,
-                    "name": "Green Mountain Summit Loop",
-                    "type": "Recommended Route",
-                    "summary": "A climb around the ridge of Green Mountain Trail with some detours.",
-                    "difficulty": "blue",
-                    "stars": 3,
-                    "starVotes": 3,
-                    "location": "West Pleasant View, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7091962\/green-mountain-summit-loop",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_sqsmall_1554311770.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_small_1554311770.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_smallMed_1554311770.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_medium_1554311770.jpg",
-                    "length": 7.7,
-                    "ascent": 878,
-                    "descent": -878,
-                    "high": 6838,
-                    "low": 6143,
-                    "longitude": -105.1522,
-                    "latitude": 39.6906,
-                    "conditionStatus": "All Clear",
-                    "conditionDetails": "Dry",
-                    "conditionDate": "2020-05-30 10:02:14"
-                },
-                {
-                    "id": 7049083,
-                    "name": "Golden Cliffs Loop",
-                    "type": "Recommended Route",
-                    "summary": "Starting from a less-crowded lot, this offers rougher terrain and easy climbing access. Great views of downtown Golden.",
-                    "difficulty": "blueBlack",
-                    "stars": 4.5,
-                    "starVotes": 4,
-                    "location": "Golden, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7049083\/golden-cliffs-loop",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004822_sqsmall_1554310858.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004822_small_1554310858.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004822_smallMed_1554310858.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004822_medium_1554310858.jpg",
-                    "length": 1.6,
-                    "ascent": 529,
-                    "descent": -536,
-                    "high": 6431,
-                    "low": 5896,
-                    "longitude": -105.2141,
-                    "latitude": 39.7662,
-                    "conditionStatus": "Unknown",
-                    "conditionDetails": null,
-                    "conditionDate": "1970-01-01 00:00:00"
-                },
-                {
-                    "id": 7003386,
-                    "name": "Green Mountain Tour",
-                    "type": "Recommended Route",
-                    "summary": "A good hike with easy Front Range access.  Some steep climbs, rocks and nice views.",
-                    "difficulty": "blue",
-                    "stars": 3.8,
-                    "starVotes": 28,
-                    "location": "West Pleasant View, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7003386\/green-mountain-tour",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_sqsmall_1554311770.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_small_1554311770.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_smallMed_1554311770.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005260_medium_1554311770.jpg",
-                    "length": 5.4,
-                    "ascent": 909,
-                    "descent": -900,
-                    "high": 6854,
-                    "low": 6132,
-                    "longitude": -105.1524,
-                    "latitude": 39.6903,
-                    "conditionStatus": "All Clear",
-                    "conditionDetails": "Dry",
-                    "conditionDate": "2020-05-06 21:20:03"
-                },
-                {
-                    "id": 7013516,
-                    "name": "Jaycee to Carpenter Park Lakes Loop",
-                    "type": "Recommended Route",
-                    "summary": "Suburban loop from Jaycee Park around the Carpenter Park Lakes (Loop 4) via Grange Hall Creek Trail.",
-                    "difficulty": "green",
-                    "stars": 3,
-                    "starVotes": 1,
-                    "location": "Northglenn, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7013516\/jaycee-to-carpenter-park-lakes-loop",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011374_sqsmall_1554559255.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011374_small_1554559255.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011374_smallMed_1554559255.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7011374_medium_1554559255.jpg",
-                    "length": 3.4,
-                    "ascent": 86,
-                    "descent": -86,
-                    "high": 5239,
-                    "low": 5162,
-                    "longitude": -104.9639,
-                    "latitude": 39.8902,
-                    "conditionStatus": "Unknown",
-                    "conditionDetails": null,
-                    "conditionDate": "1970-01-01 00:00:00"
-                },
-                {
-                    "id": 7092790,
-                    "name": "Nightbird Gulch\/Galbraith Loop",
-                    "type": "Recommended Route",
-                    "summary": "This is a moderately trafficked hike that offers great views of the entire front range and the mountains!",
-                    "difficulty": "blue",
-                    "stars": 4.5,
-                    "starVotes": 2,
-                    "location": "Golden, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7092790\/nightbird-gulchgalbraith-loop",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005037_sqsmall_1554311310.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005037_small_1554311310.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005037_smallMed_1554311310.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005037_medium_1554311310.jpg",
-                    "length": 5.2,
-                    "ascent": 1245,
-                    "descent": -1245,
-                    "high": 7191,
-                    "low": 5950,
-                    "longitude": -105.2376,
-                    "latitude": 39.7616,
-                    "conditionStatus": "Unknown",
-                    "conditionDetails": null,
-                    "conditionDate": "1970-01-01 00:00:00"
-                },
-                {
-                    "id": 7029252,
-                    "name": "Apex-Enchanted Lollipop",
-                    "type": "Recommended Route",
-                    "summary": "This is one of the best hikes on the Front Range.",
-                    "difficulty": "blue",
-                    "stars": 4.2,
-                    "starVotes": 63,
-                    "location": "West Pleasant View, Colorado",
-                    "url": "https:\/\/www.hikingproject.com\/trail\/7029252\/apex-enchanted-lollipop",
-                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004559_sqsmall_1554245622.jpg",
-                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004559_small_1554245622.jpg",
-                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004559_smallMed_1554245622.jpg",
-                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7004559_medium_1554245622.jpg",
-                    "length": 5.7,
-                    "ascent": 1179,
-                    "descent": -1179,
-                    "high": 7312,
-                    "low": 6172,
-                    "longitude": -105.2098,
-                    "latitude": 39.7162,
-                    "conditionStatus": "All Clear",
-                    "conditionDetails": "Dry",
-                    "conditionDate": "2020-08-01 12:35:30"
-                }
-            ],
-            "success": 1
-        }
-  recorded_at: Mon, 03 Aug 2020 16:01:29 GMT
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_API_KEY>&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1207388428"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_API_KEY>&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-1900023554"}]}]}'
+  recorded_at: Mon, 03 Aug 2020 16:02:03 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=<WEATHER_MAP_API>&exclude=minutely&lat=39.738453&lon=-104.984853&units=imperial
@@ -372,7 +77,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 03 Aug 2020 16:01:29 GMT
+      - Mon, 03 Aug 2020 16:02:04 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -389,7 +94,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":39.74,"lon":-104.98,"timezone":"America/Denver","timezone_offset":-21600,"current":{"dt":1596470372,"sunrise":1596456076,"sunset":1596507046,"temp":70.52,"feels_like":70.92,"pressure":1019,"humidity":61,"dew_point":56.44,"uvi":10.4,"clouds":4,"visibility":10000,"wind_speed":2.86,"wind_deg":62,"weather":[{"id":800,"main":"Clear","description":"clear
+      string: '{"lat":39.74,"lon":-104.98,"timezone":"America/Denver","timezone_offset":-21600,"current":{"dt":1596470386,"sunrise":1596456076,"sunset":1596507046,"temp":70.52,"feels_like":70.92,"pressure":1019,"humidity":61,"dew_point":56.44,"uvi":10.4,"clouds":4,"visibility":10000,"wind_speed":2.86,"wind_deg":62,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}]},"hourly":[{"dt":1596466800,"temp":70.52,"feels_like":70.92,"pressure":1019,"humidity":61,"dew_point":56.44,"clouds":4,"visibility":10000,"wind_speed":2.86,"wind_deg":62,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1596470400,"temp":72.95,"feels_like":72.54,"pressure":1018,"humidity":53,"dew_point":54.82,"clouds":4,"visibility":10000,"wind_speed":3.38,"wind_deg":60,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1596474000,"temp":77.11,"feels_like":75.38,"pressure":1017,"humidity":43,"dew_point":52.92,"clouds":3,"visibility":10000,"wind_speed":4.65,"wind_deg":56,"weather":[{"id":800,"main":"Clear","description":"clear
@@ -447,5 +152,5 @@ http_interactions:
         sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":9.69},{"dt":1596999600,"sunrise":1596974817,"sunset":1597025030,"temp":{"day":93.54,"min":75.06,"max":95.04,"night":80.65,"eve":85.05,"morn":75.06},"feels_like":{"day":88.16,"night":74.8,"eve":72.48,"morn":67.68},"pressure":1014,"humidity":10,"dew_point":22.68,"wind_speed":2.42,"wind_deg":79,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":10,"pop":0,"uvi":10.27},{"dt":1597086000,"sunrise":1597061274,"sunset":1597111356,"temp":{"day":89.82,"min":73.74,"max":89.82,"night":75.56,"eve":82.63,"morn":73.74},"feels_like":{"day":82.81,"night":72.41,"eve":72.48,"morn":69.01},"pressure":1013,"humidity":13,"dew_point":34.3,"wind_speed":6.17,"wind_deg":98,"weather":[{"id":500,"main":"Rain","description":"light
         rain","icon":"10d"}],"clouds":0,"pop":0.65,"rain":1.04,"uvi":9.93}]}'
-  recorded_at: Mon, 03 Aug 2020 16:01:29 GMT
+  recorded_at: Mon, 03 Aug 2020 16:02:04 GMT
 recorded_with: VCR 6.0.0

@@ -13,7 +13,7 @@
 require 'rails_helper'
 
 describe "trails request" do
-  scenario "request returns trail info, distance, weather" , :vcr do
+  scenario "request returns trail info, distance, weather", :vcr do
     get "/api/v1/trails?location=denver,co"
 
     expect(response).to be be_successful

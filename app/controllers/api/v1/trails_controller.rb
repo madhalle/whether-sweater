@@ -9,6 +9,5 @@ class Api::V1::TrailsController<ApplicationController
     forecast = Forecast.new(latitude, longitude).current
     trail_result = Trail.new(location, forecast, trails)
     render json: TrailSerializer.new(trail_result)
-    # trails_restults = TrailsService.new(latitude, longitude).get_trails
   end
 end

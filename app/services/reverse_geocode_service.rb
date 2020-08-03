@@ -6,6 +6,7 @@ class ReverseGeocodeService
       req.params[:location] = location
       req.params[:includeRoadMetadata] = true
       req.params[:includeNearestIntersection] = true
+      req.params[:limit] = 3
     end
     results = JSON.parse(response.body, symbolise_names: true )
     street = results["results"][0]["locations"][0]["nearestIntersection"]["streetDisplayName"]

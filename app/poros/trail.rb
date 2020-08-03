@@ -1,6 +1,6 @@
 class Trail
-  def initialize(attributes)
-    @attributes = attributes
-    require "pry"; binding.pry
+  attr_reader :location, :forecast, :trails
+  def initialize(location, forecast, trails)
+    @argument = argument
   end
 end

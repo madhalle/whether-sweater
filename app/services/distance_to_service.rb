@@ -4,6 +4,7 @@ class DistanceToService
       req.params[:key] = ENV['MAPQUEST_API_KEY']
       req.params[:from] = current_location
       req.params[:to] = trail_address
+      req.params[:doReverseGeocode] =  true
 
     end
     result = JSON.parse(response.body, symbolize_names: true)

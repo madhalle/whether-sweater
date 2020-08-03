@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "when visiting path" do
-  it "should create a user and generate a unique api key" do
+  xit "should create a user and generate a unique api key" do
     post "/api/v1/users"
     params = {
       "email": "whatever@example.com",

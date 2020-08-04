@@ -16,4 +16,11 @@ describe "when road trip request is made" do
     expect(results[:data][:attributes][:forecast]).to_not be_nil
     expect(results[:data][:attributes][:time_to].keys).to eq([:hours, :minutes, :total_time_in_seconds])
   end
+  it "response should return travel time & arrival forecast" , :vcr do
+    post "/api/v1/road_trip?origin=Denver,Co&destination=Pueblo,Co&api_key=#{@user.api_key}22"
+
+    expect(response.status).to eq(401)
+    results = JSON.parse(response.body, symbolize_names: true)
+    expect(results[:messages]).to eq("Invalid Api Key")
+  end
 end

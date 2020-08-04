@@ -1,24 +1,7 @@
-# README
+# WHETHER SWEATHER?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Will it be sweater weather or not at the end of your perilous journey?
+Whether Sweater is a backend service that enables users to get travel time a destination of their choice and what the predicted forecast will be when they arrive.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Destinations in the US are currently the only acceptable destinations,
+Input for destinations should be in single-line address form.

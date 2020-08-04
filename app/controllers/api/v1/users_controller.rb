@@ -7,7 +7,6 @@ class Api::V1::UsersController < ApplicationController
     )
     if user.save!
       user.update(api_key: JsonWebToken.encode(user_id: user.id))
-      session[:user_id] = user.id
       render json: UserSerializer.new(user)
     else
       render status: 402

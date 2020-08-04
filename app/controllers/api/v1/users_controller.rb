@@ -6,8 +6,9 @@ class Api::V1::UsersController < ApplicationController
       password_confirmation: params[:password_confirmation]
     )
     if user.save!
+      user.update(api_key: JsonWebToken.encode(user_id: user.id))
       session[:user_id] = user.id
-      render json: UserSerializer.new(user) 
+      render json: UserSerializer.new(user)
     else
       render status: 402
     end

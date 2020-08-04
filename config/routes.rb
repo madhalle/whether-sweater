@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
   # get '/api/v1/forecast', to: ''
   namespace :api do
@@ -6,6 +7,7 @@ Rails.application.routes.draw do
       resources :backgrounds
       resources :users
       resources :sessions
+      resources :road_trip
     end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

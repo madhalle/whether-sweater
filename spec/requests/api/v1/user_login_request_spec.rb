@@ -1,27 +1,26 @@
 require 'rails_helper'
 
-describe "when visiting path" do
-  it "should create a user and generate a unique api key" do
+describe "when sendin in current user email and password" do
+  before :each do
     post "/api/v1/users?email=whatever@example.com&password=password&password_confirmation=password"
+  end
+  it "return users email and api key" do
+    post "/api/v1/sessions?email=whatever@example.com&password=password"
 
     expect(response).to be_successful
+    expect(response.status).to eq(200)
     results = JSON.parse(response.body, symbolize_names: true)
     expect(results[:data][:type]).to eq("user")
-    expect(results[:data][:attributes].keys).to eq([:id, :email, :api_key])
-    expect(results[:data][:attributes][:email]).to eq("whatever@example.com")
     expect(results[:data][:id]).to_not be_nil
-
-    user = User.last
-    expect(user.email).to eq("whatever@example.com")
-    expect(user.password_digest).to_not be_nil
-    expect(User.all.count).to eq(1)
-    expect(user.api_key).to_not be_nil
+    expect(results[:data][:attributes].keys).to eq([:id, :email, :api_key])
+    expect(results[:data][:attributes][:api_key]).to_not be_nil
+    expect(results[:data][:attributes][:api_key]).to eq(User.last.api_key)
   end
-  it "should render a 400 error for mismatched passwords" do
-    post "/api/v1/users?email=whatever@example.com&password=password&password_confirmation=pas2sword"
+  it "return a 400 error message for nismatched password" do
+    post "/api/v1/sessions?email=whatever@example.com&password=pasz2sword"
 
+    expect(response.status).to eq(401)
     results = JSON.parse(response.body, symbolize_names: true)
-    expect(results[:code]).to eq(400)
-    expect(results[:message]).to eq(["Password confirmation doesn't match Password"])
+    expect(results[:messages]).to eq("Invalid Email or Password")
   end
 end

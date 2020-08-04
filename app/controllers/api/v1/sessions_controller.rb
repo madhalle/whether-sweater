@@ -5,8 +5,8 @@ class Api::V1::SessionsController < ApplicationController
       session[:user_id] = user.id
       render json: UserSerializer.new(user)
     else
-      error = user.authenticate.errors.full_messages
-      render json: {code: 400, message: error}
+      error = "Invalid Email or Password"
+      render json: {messages: error}, status: :unauthorized
     end
   end
 end

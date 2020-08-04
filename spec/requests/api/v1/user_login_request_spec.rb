@@ -16,4 +16,11 @@ describe "when sendin in current user email and password" do
     expect(results[:data][:attributes][:api_key]).to_not be_nil
     expect(results[:data][:attributes][:api_key]).to eq(User.last.api_key)
   end
+  it "return a 400 error message for nismatched password" do
+    post "/api/v1/sessions?email=whatever@example.com&password=pasz2sword"
+
+    expect(response.status).to eq(401)
+    results = JSON.parse(response.body, symbolize_names: true)
+    expect(results[:messages]).to eq("Invalid Email or Password")
+  end
 end

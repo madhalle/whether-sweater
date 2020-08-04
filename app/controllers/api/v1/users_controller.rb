@@ -5,11 +5,12 @@ class Api::V1::UsersController < ApplicationController
       password: params[:password],
       password_confirmation: params[:password_confirmation]
     )
-    if user.save!
+    if user.save
       user.update(api_key: JsonWebToken.encode(user_id: user.id))
       render json: UserSerializer.new(user)
     else
-      render status: 402
+      error = user.errors.full_messages
+      render json: {code: 400, message: error}
     end
 
   end

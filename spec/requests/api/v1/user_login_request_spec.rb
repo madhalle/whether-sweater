@@ -2,14 +2,10 @@ require 'rails_helper'
 
 describe "when visiting path" do
   it "should create a user and generate a unique api key" do
-    post "/api/v1/users"
-    params = {
-      "email": "whatever@example.com",
-      "password": "password",
-      "password_confirmation": "password"
-              }
-    expect(response).to be_successful
+    post "/api/v1/users?email=whatever@example.com&password=password&password_confirmation=password"
 
+    expect(response).to be_successful
+    require "pry"; binding.pry
     results = JSON.parse(response.body, symbolize_names: true)
     expect(results[:data][:type]).to eq("users")
     expect(results[:data][:attributes].keys).to eq([:email, :api_key])
